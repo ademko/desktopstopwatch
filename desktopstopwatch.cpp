@@ -92,7 +92,7 @@ BEGIN_EVENT_TABLE(WatchFrame, wxFrame)
 END_EVENT_TABLE()
 
 WatchFrame::WatchFrame(wxWindow *parent)
-  : wxFrame(parent, -1, L"Desktop Stop Watch", wxDefaultPosition, wxDefaultSize, wxMINIMIZE_BOX | wxCAPTION | wxCLOSE_BOX | wxCLIP_CHILDREN),
+  : wxFrame(parent, -1, L"Desktop Stop Watch", wxDefaultPosition, wxDefaultSize, wxMINIMIZE_BOX | wxSYSTEM_MENU | wxCAPTION | wxCLOSE_BOX | wxCLIP_CHILDREN),
   dm_timer(this, id_Tick), dm_state(state_zero)
 {
   wxGridBagSizer *sizer = new wxGridBagSizer;
